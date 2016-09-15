@@ -3,6 +3,9 @@
 
 ## Write a short comment describing this function
 
+## function makeCacheMatrix takes a matrix as input
+## output is a list contains four arguments
+## it has set, get, set inverse, get inverse functions
 makeCacheMatrix <- function(x = matrix()) {
 	m<- NULL
 	set <- function(y) {
@@ -19,6 +22,11 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Write a short comment describing this function
 
+## function cacheSolve takes the special list created above
+## it output the solved matrix
+## it first to check if it has been calculated
+## if so return the value from cache without caululation
+## otherwise, it will calculate and set the value in cache
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
 	m <- x$getinverse()
